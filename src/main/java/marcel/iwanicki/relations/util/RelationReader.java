@@ -81,7 +81,7 @@ public class RelationReader {
     }
 
     /*
-    Wczytaj zbiór X z pierwszej linijki pliku
+    Wczytaj zbior X z pierwszej linijki pliku
      */
     public List<String> readCollection() {
 
@@ -106,7 +106,7 @@ public class RelationReader {
     }
 
     /*
-    Wczytaj relację R z drugiej linijki pliku
+    Wczytaj relacje R z drugiej linijki pliku
      */
     public List<Relation> readRelation() {
 

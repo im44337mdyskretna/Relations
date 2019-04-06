@@ -15,7 +15,7 @@ public class Main {
         RelationIndicator relationIndicator = new RelationIndicator(srcPath);
         boolean equivalence = relationIndicator.checkEquivalenceRelation();
 
-        System.out.println(equivalence ? "Relacja jest relacją równoważności" : "Relacja nie jest relacją równoważności");
+        System.out.println(equivalence ? "Relacja jest relacja rownowaznosci" : "Relacja nie jest relacja rownowaznosci");
     }
 
     private static void generateInfoMessage() {
@@ -23,7 +23,7 @@ public class Main {
         System.out.println("[PLIK POWINIEN WYGLADAC NASTEPUJACO] : ");
         System.out.println("X={[DANE]}\n" +
                 "R={[PARY UPORZADKOWANE]}");
-        System.out.println("\n[PRZYKŁAD] : ");
+        System.out.println("\n[PRZYKLAD] : ");
         System.out.println("X={a,b,c,d}\n" +
                 "R={(a,a),(b,b),(c,c),(d,d),(a,b),(b,a)}\n");
         System.out.println("BEZ SPACJI");

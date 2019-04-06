@@ -21,8 +21,8 @@ public class RelationIndicator {
 
     /*
     Sprawdza czy relacja jest zwrotna
-    Funkcja przyjumuje, że relacja jest zwrotna gdy Lista złożona z (a,a),(b,b),(c,c)...itd.
-    zawiera się w liście inputRelation, jeśli tak nie jest zwraca fałsz i wypisuje komunikat.
+    Funkcja przyjumuje, ze relacja jest zwrotna gdy Lista zlozona z (a,a),(b,b),(c,c)...itd.
+    zawiera sie w liscie inputRelation, jesli tak nie jest zwraca falsz i wypisuje komunikat.
      */
     private boolean checkReturnRelationCondition() {
         List<RelationReader.Relation> returnRelationCondition = new ArrayList<RelationReader.Relation>();
@@ -37,10 +37,10 @@ public class RelationIndicator {
 
     /*
     Sprawdz czy relacja jest symetryczna
-    Funkcja przyjumuje ze relacja jest symetryczna, gdy znajdziemy wsrod relacji takie pary, że
+    Funkcja przyjumuje ze relacja jest symetryczna, gdy znajdziemy wsrod relacji takie pary, ze
     xRy => yRz, gdzie
     xRy = current (iterowane po wszystkich relacjach)
-    yRx = (iterowane po j, jesli żadna z par nie spelnia warunku funkcja zwraca fałsz)
+    yRx = (iterowane po j, jesli zadna z par nie spelnia warunku funkcja zwraca falsz)
      */
     private boolean checkSymmetricalRelationCondition() {
         for(int i=0; i<inputRelation.size(); i++) {
@@ -64,11 +64,11 @@ public class RelationIndicator {
 
     /*
     Sprawdz czy relacja jest przechodnia
-    Funkcja przyjmuje ze relacja jest przechodnia, gdy znajdziemy wśród relacji takie pary, że
+    Funkcja przyjmuje ze relacja jest przechodnia, gdy znajdziemy wsrod relacji takie pary, ze
     xRy ^ yRz => xRz, gdzie
     xRy = currentLeft_A (iterowane po wszystkich relacjach)
     yRz = currentLeft_B (przypisywane tylko gdy w relacjach znaleziona zostanie taka, ze currentLeft_A ma y po prawej, a currentLeft_B ma y po lewej)
-    xRz = currentRight (iterowane po k, jesli żadna z par nie spelnia warunku funkcja zwraca fałsz)
+    xRz = currentRight (iterowane po k, jesli zadna z par nie spelnia warunku funkcja zwraca falsz)
      */
     private boolean checkTransitiveRelationCondition() {
         for(int i=0; i<inputRelation.size(); i++) {
@@ -99,7 +99,7 @@ public class RelationIndicator {
     }
 
     /*
-    Sprawdz czy relacja jest relacją równoważności
+    Sprawdz czy relacja jest relacja rownowaznosci
      */
     public boolean checkEquivalenceRelation() {
         boolean a = checkReturnRelationCondition();
